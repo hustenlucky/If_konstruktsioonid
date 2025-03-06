@@ -1,20 +1,19 @@
-# #Ainult positiivsed arvud korrutame
+# # #Ainult positiivsed arvud korrutame
 # a=float(input("A: "))
-# b=float(input("B: "))
-# if a>0 and b>0:
-#     print(f"Korrutis võrdub: {a*b}")
+# # b=float(input("B: "))
+# # if a>0 and b>0:
+# #     print(f"Korrutis võrdub: {a*b}")
 
 
-
-#   #Kas a on paaris või paaritu arv?
-#   if a%2==0 and a!=0:
+# #Kas a on paaris või paaritu arv?
+# if a%2==0 and a!=0:
 #         print(f"Arv {a} on paaris")
-#  elif a==0:
-#        print(f"Arv {a} on märamatu")
-#  else:
+# elif a==0:
+#     print(f"Arv {a} on märamatu")
+# else:
 #     print(f"Arv {a} on paaritu")
 
-#    #Ema-robot 5-, 4-, 3-, 2-, 1-,
+   #Ema-robot 5-, 4-, 3-, 2-, 1-,
 # try:
 #     hinne=int(input("Mis hinne sai täna koolis?"))
 #     if hinne in range(1,6):
@@ -25,16 +24,20 @@
 #             print("H")
 #         elif hinne==3:
 #             print("R")
-#         else:
+#         else:ssSs
 #             print("MR")
 #     else:
 #         print("Ei ole hinne")
 # except Exception as e:
-#     print("Viga:", e)
+#     # print("Viga:", e)
+   
+   
+    
+#     nimi=("PYTHON")
 # from curses.ascii import isupper
 
 
-# # #Ülesanne 1
+# # Ülesanne 1
 # nimi=input("Mis su nimi on?")
 # if nimi=="JUKU":
 #     print("Lähme kinno")
@@ -52,9 +55,6 @@
 # else:
 #     print("Ma olen hõivatud! Mino kinno ise!")
     
-# else:
-#     print("ma olen hõivatud! Mine kinno ise!")
-
 # #2 PINGINAABRID
 # # ["Bohdan","Ruslan","ROBERT_PIKMI"]
 # nimed=["Ruslan","RObert","BOhdan"]
@@ -84,3 +84,41 @@
 #         print("Palun sisesta jah või ei!")
 # except:
 #     print("Pikkus, laius ja hind peavad olema numbrid!")
+#Ül4
+# alghind=float(input("sisesta toode alghind:  "))
+# if alghind>500:
+#     soodus=alghind=0.50
+#     print(f"Soodus hind on {soodus}eurot.")
+# else:print("soodustus ei kehti")
+# Ül5
+# temp = float(input("Mis temperatuur on Odessas? "))
+# if temp < 17:
+#     print("Tuba on külm, tõsta temperatuuri")
+# else:
+#     print("Toatemperatuur on väga soe")
+# ÜL6
+# try:
+#     pikkus = float(input("Sisesta oma pikkus: "))  
+#     if pikkus <= 170:
+#         print("Sa oled lühike((")  
+#     elif 171 <= pikkus <= 200:
+#         print("Sa oled keskmine")  
+#     else:
+#         print("Sa oled väga pikk!!!")  
+# except:
+#     print("Viga!")  
+
+# # Ül13
+# gender = input("gender: ")
+
+# if gender.lower() == "mees":
+#     age = int(input("Mis on sinu vanus? "))
+#     weight = int(input("Mis on sinu kaal (kg)? "))
+    
+#     if 16 <= age <= 18 and weight <= 100:
+#         print("Sa sobid meeskonda!")
+#     else:
+#         print("Kahjuks ei sobi meeskonda.")
+# else:
+#     print("Küsimus vanuse kohta ei kehti, kuna see on ainult meestele.")
+    
