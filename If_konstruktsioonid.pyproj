@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e860e6f4-50a0-4565-aa84-b9810e0b2a18</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TUND 2.2.py</StartupFile>
+    <StartupFile>Tund 3.2 Praktiline töö Tsükkel.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,7 @@
     <Compile Include="If_konstruktsioonid.py" />
     <Compile Include="ligtsad programid.py" />
     <Compile Include="1.3 tund .py" />
+    <Compile Include="Tund 3.2 Praktiline töö Tsükkel.py" />
     <Compile Include="TUND 2.2.py" />
     <Compile Include="Tund 2.3.py" />
     <Compile Include="Tund 2.1 Tingimuslik operaator IF.py" />
