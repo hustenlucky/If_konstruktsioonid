@@ -32,7 +32,7 @@ while True:
                     continue
             else:
                 print("2,3 sübolid ei ole ok")
-        else:
+        else: 
             print("Isikukod on numbrid")
     except:
         print("Viga andmetega!")
