@@ -50,7 +50,7 @@
 # print(
 # list_sõne.index("r")
 # print(f"Täht r on {ind}-indeksiga")
-# count
+# count 
 # k=list_sõne.count("r")
 # print(f"Täht r kohtume {k} korda sõnas {sõne}")
 # sort
