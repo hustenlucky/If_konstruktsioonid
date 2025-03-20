@@ -183,3 +183,4 @@ numbers[min_index], numbers[max_index] = numbers[max_index], numbers[min_index]
 
 print("Изменённый список:", numbers)
 
+ 
