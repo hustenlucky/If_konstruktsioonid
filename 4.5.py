@@ -3,7 +3,7 @@ while True:
         isikukod=input("Tere! mis su isikukod on?: ")
         if isikukod.isdigit() and len(isikukod)==11:
             ik_list=list(isikukod)
-            if int(ik_list[0]) in [1,2,3]:
+            if int(ik_list[0]) in [1,3,5]:
                 sugu="mees"
             elif int(ik_list[0]) in [2,4,6]:
                 sugu="naine"        
