@@ -67,7 +67,7 @@ def bank(summa:float, aastad:int, intress:float)->float:
     return summa
 #6
 def is_prime(a=randint(1,10000)):
-    """kirjeldage fuktsioon
+    """kirjeldage fuktsioon 
     :param ....
     :param ....
     :rtype:...
@@ -92,5 +92,5 @@ def date(päev:int,kuu:int,aasta:int)->bool:
         v=True
     else:
         v=False
-    return v
+    return v 
         
