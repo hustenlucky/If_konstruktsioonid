@@ -1,4 +1,4 @@
-#Töö 4.4
+ #Töö 4.4
 #1 
 from string import *
 vokaali=["a","o","i","e","u","ü","õ","ä","ö"]
