@@ -126,7 +126,7 @@ print("Teine järjend:", korduvad_tähed) #те же буквы, но повто
 # #extend
 # list_sõne.extend(elemendid)
 # print(list_sõne)
-# print(elemendid)
+# print(elemendid) 
 
 # #insert
 # elemendid.insert(0,"A")
