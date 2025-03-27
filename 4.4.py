@@ -110,24 +110,6 @@ for i in range(n):
 print("Järjend:", tähed) #буквы которые мы используем
 print("Teine järjend:", korduvad_tähed) #те же буквы, но повторяются взависимости от позиции
 
-#12
-import random
-
-numbers=[random.randint(1, 100) for _ in range(10)]
-print("Algne nimekiri", numbers)
-
-min_value=min(numbers)
-max_value=max(numbers)
-
-min_index=numbers.index(min_value)
-max_index=numbers.index(max_value)
-
-numbers[min_index], numbers[max_index] = numbers[max_index], numbers[min_index]
-
-print("Muudetud loend", numbers)
-
-
-
 # sõne="Programmeerimine"
 # print(sõne)
 # list_sõne=list(sõne)
