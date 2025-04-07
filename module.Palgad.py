@@ -51,6 +51,6 @@ def Sorteerimine(p:list,i:list)-> any:
     for n in range(0,len(i)):
         for m in range(n,len(i)):
             if eval(str(p[n])+v+str(p[m])):
-               p[n]>[m]=p[m],p[n
+               p[n]>[m]=p[m],p[n]
                i[n]>[m]=i[m],i[n]
     return p,i
