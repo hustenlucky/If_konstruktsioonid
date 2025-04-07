@@ -15,7 +15,7 @@ while True:
         for i in range(k):
             Lisa_andmed(palgad,inimesed)
     elif v==2:
-        Kustuta_andmed(palgad,inimesed)
+         Kustuta_andmed(palgad,inimesed)
     elif v==3:
         Suurim_palk(palgad,inimesed)
     elif v==4:
