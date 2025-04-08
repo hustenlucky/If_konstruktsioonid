@@ -92,7 +92,7 @@ def Võrdsed_palgad(p:list,i:list):
     """
     hulk=set(p)
     print(hulk)
-    for palk in hulk:
+    for palk in hulk: 
         k=p.count(palk)
         if k>1:
             print(f"Palk {palk}")
@@ -101,3 +101,40 @@ def Võrdsed_palgad(p:list,i:list):
                 ind=p.index(palk,ind)
                 print(f"Saab kätte {i[ind]}")
                 ind+=1
+
+def palk_otsimine(p:list,i:list):
+    """Сделать поиск зарплаты по имени человека. 
+    """
+    try:
+        nimi=input("Sisesta nimi otsinguks: ")
+        leitud=False
+        for o in range(len(i)): #проходим по всем индексам
+            if i[o]==nimi: #если имя совпадает 
+                print(f"{i[o]} saab palka {p[o]}") # написать имя человека и какую зарплату он получает
+                leitud=True
+            else:
+                print("Sellise nimega inimest ei leitud.") # если имени нет в списке
+    except:
+        print("Viga!")
+
+def filtr_palgad(p:list,i:list):
+     try:
+        summa=float(input("Sisesta summa mille järgi filtreerida: "))
+        valik=input(f"Kas otsida inimesi, kelle palk on rohkem kui {summa}? ").lower()
+        if valik=="jah":
+            rohkem=True
+        else:
+            rohkem=False
+        valitud_inimesed=[(i[j],p[j]) for j in range(len(p)) if rohkem]
+
+def tulumaks(p:list,i:list):
+    """Вычислить зарплату, которую человек получит на руки после вычисления подоходного налога.
+    """
+    palk=float(input("Sisesta palgasumma: "))
+    summa=palk*0.78
+    km=palk*0.22
+    print(f"Netto palk on {summa}. Käibemaks on {km}")
+
+#ul 19
+age = 16
+print("I am", age, "years old.")  # I am 16 years old.

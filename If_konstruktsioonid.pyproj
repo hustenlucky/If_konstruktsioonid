@@ -27,7 +27,7 @@
     <Compile Include="4.4.py" />
     <Compile Include="4.5.py" />
     <Compile Include="Palgad.py" />
-    <Compile Include="module.palgad.py" />
+    <Compile Include="module_palgad.py" />
     <Compile Include="Tund5_Kasutaja.py" />
     <Compile Include="kasutaja_funktsioonide.py" />
     <Compile Include="play.py" />
