@@ -17,7 +17,7 @@ while True:
     elif v==2:
         Kustuta_andmed(palgad,inimesed)
     elif v==3:
-        Suurim_palk(palgad,inimesed)
+        Suurim_palk(palgad,inimesed) 
     elif v==4:
         Väiksem_palk(palgad,inimesed)
     elif v==5:
@@ -25,10 +25,10 @@ while True:
         print(palgad,inimesed)
     elif v==6:
         palgad,inimesed=sorteerimine_kahanev(palgad,inimesed)
-        print(palgad,inimesed)
+        print(palgad,inimesed) 
     elif v==7:
-        Võrdsed_palgad(palgad,inimesed)
-    elif v==8:
+        Võrdsed_palgad(palgad,inimesed) 
+    elif v==8:   
         palk_otsimine(palgad,inimesed)
     elif v==9:
         top_inimesed(palgad,inimesed)

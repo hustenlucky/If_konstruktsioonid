@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e860e6f4-50a0-4565-aa84-b9810e0b2a18</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Palgad.py</StartupFile>
+    <StartupFile>5.5 Iseseisev töö.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,7 @@
     <Compile Include="1.3 tund .py" />
     <Compile Include="4.4.py" />
     <Compile Include="4.5.py" />
+    <Compile Include="5.5 Iseseisev töö.py" />
     <Compile Include="Palgad.py" />
     <Compile Include="module_palgad.py" />
     <Compile Include="Tund5_Kasutaja.py" />
