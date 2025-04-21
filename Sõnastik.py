@@ -18,7 +18,7 @@ def lisa_sona(sonad):
     uus_rus = input("Sisesta sõna vene keeles: ").strip().lower()
     uus_eng = input("Sisesta sõna inglise keeles: ").strip().lower()
     sonad.append({'est': uus_est, 'rus': uus_rus, 'eng': uus_eng})
-    print("Uus sõna on lisatud!")
+    print("Uus sõna on lisatud!") 
      
 def loo_sonastik():
     return sonad
