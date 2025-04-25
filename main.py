@@ -8,7 +8,7 @@ print(andmed)
 print(andmed["nimi"]) #показать значение ключа "nimi"
 print(andmed.get("nimi")) #показать значение ключа "nimi"
 print(andmed.get("nimi_","Ei ole sõnastikus")) 
-print(andmed.keys()) #показать ключи
+print(andmed.keys()) #показать ключи 
 print(andmed.values()) #показать значения
 for k, v in andmed.items(): #показать список ключ и значение
     print(k, v)
