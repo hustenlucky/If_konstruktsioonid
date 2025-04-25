@@ -17,7 +17,7 @@ print(andmed)
 andmed["prillid"]=True #добавление ключа
 print(andmed)
 del andmed['prillid'] #удаление ключа
-print(andmed)
+print(andmed) 
 andmed.update({'nimi':'Kati'}) #Обновление значения имя
 print(andmed)
 
