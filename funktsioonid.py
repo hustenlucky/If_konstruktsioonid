@@ -34,6 +34,6 @@ def muuda_kontakt(kontaktid, vana_nimi, uus_nimi, uus_telefon, uus_email):
         if k["nimi"].lower() == vana_nimi.lower():
             k["nimi"] = uus_nimi
             k["telefon"] = uus_telefon
-            k["email"] = uus_email
+            k["email"] = uus_email 
             return True
     return False
