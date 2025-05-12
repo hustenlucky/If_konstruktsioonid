@@ -77,7 +77,7 @@ def muuda_kontakt_gui():
 
 aken = tk.Tk()
 aken.title("Telefoniraamat") 
-aken.configure(bg="red")
+aken.configure(bg="yellowgreen")
 # Sisestusväljad
 otsingu_viide = tk.StringVar()#IntVar() #Muudame StringVar-iks, et saaksime salvestada algse nime
 otsingu_viide.set("")
@@ -96,14 +96,14 @@ email_entry.pack()
 nuppude_rida = tk.Frame(aken)
 nuppude_rida.pack(pady=5)
 
-tk.Button(nuppude_rida, text="Lisa kontakt", command=lisa_kontakt,bg="red",font=("Times New Roman",14)).pack(side="left",pady=5)
-tk.Button(nuppude_rida, text="Kuva kontaktid", command=kuva_kontaktid,bg="blue",font=("Arial",11)).pack(side="left")
-tk.Button(nuppude_rida, text="Otsi kontakti", command=otsi_kontakti_gui,bg="green",font=("ALGERIAN",10)).pack(side="left")
-tk.Button(nuppude_rida, text="Kustuta kontakt", command=kustuta_kontakt_gui,bg="purple",font=("Bodoni MT",22)).pack(side="left")
-tk.Button(nuppude_rida, text="Sorteeri (nime järgi)", command=sorteeri_gui,bg="yellow",font=("Arial Rounded MT Bold",16)).pack(side="left")
-tk.Button(nuppude_rida, text="Muuda kontakt", command=muuda_kontakt_gui,bg="grey",font=("Amiri Quran",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Lisa kontakt", command=lisa_kontakt,bg="yellowgreen",font=("Times New Roman",12)).pack(side="left",pady=5)
+tk.Button(nuppude_rida, text="Kuva kontaktid", command=kuva_kontaktid,bg="yellow",font=("Arial",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Otsi kontakti", command=otsi_kontakti_gui,bg="yellowgreen",font=("Times New Roman",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Kustuta kontakt", command=kustuta_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Sorteeri (nime järgi)", command=sorteeri_gui,bg="yellowgreen",font=("Times New Roman",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Muuda kontakt", command=muuda_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
 
-
+ 
 tekstikast = tk.Text(aken, height=10, width=50)
 tekstikast.pack(pady=10)
 
