@@ -12,7 +12,7 @@ x2 = np.linspace(1, 9, 400)
 y2 = -(1/16)*(x2 - 5)**2 + 2
 plt.plot(x2, y2, color='brown')
 #3
-x3 = np.linspace(-9, -1, 400)
+x3 = np.linspace(-9, -1, 400) 
 y3 = (1/4)*(x3 + 5)**2 - 3
 plt.plot(x3, y3, color='blue')
 #4
