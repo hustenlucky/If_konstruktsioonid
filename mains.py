@@ -81,26 +81,26 @@ aken.configure(bg="yellowgreen")
 # Sisestusväljad
 otsingu_viide = tk.StringVar()#IntVar() #Muudame StringVar-iks, et saaksime salvestada algse nime
 otsingu_viide.set("")
-tk.Label(aken, text="Nimi:").pack()
+tk.Label(aken, text="Nimi:",bg="green",font="Arial",).pack()
 nimi_entry = tk.Entry(aken)
 nimi_entry.pack()
 
-tk.Label(aken, text="Telefon:").pack()
+tk.Label(aken, text="Telefon:",bg="green",font="Arial",).pack()
 telefon_entry = tk.Entry(aken)
 telefon_entry.pack()
 
-tk.Label(aken, text="Email:").pack()
-email_entry = tk.Entry(aken)
+tk.Label(aken, text="Email:",bg="green",font="Arial",).pack()
+email_entry = tk.Entry(aken) 
 email_entry.pack()
 
 nuppude_rida = tk.Frame(aken)
 nuppude_rida.pack(pady=5)
 
-tk.Button(nuppude_rida, text="Lisa kontakt", command=lisa_kontakt,bg="yellowgreen",font=("Times New Roman",12)).pack(side="left",pady=5)
+tk.Button(nuppude_rida, text="Lisa kontakt", command=lisa_kontakt,bg="yellowgreen",font=("Algerian",12)).pack(side="left",pady=5)
 tk.Button(nuppude_rida, text="Kuva kontaktid", command=kuva_kontaktid,bg="yellow",font=("Arial",12)).pack(side="left")
-tk.Button(nuppude_rida, text="Otsi kontakti", command=otsi_kontakti_gui,bg="yellowgreen",font=("Times New Roman",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Otsi kontakti", command=otsi_kontakti_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
 tk.Button(nuppude_rida, text="Kustuta kontakt", command=kustuta_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
-tk.Button(nuppude_rida, text="Sorteeri (nime järgi)", command=sorteeri_gui,bg="yellowgreen",font=("Times New Roman",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Sorteeri (nime järgi)", command=sorteeri_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
 tk.Button(nuppude_rida, text="Muuda kontakt", command=muuda_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
 
  
