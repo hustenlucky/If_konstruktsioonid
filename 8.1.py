@@ -21,7 +21,7 @@ y4 = (1/4)*(x4 - 5)**2 - 3
 plt.plot(x4, y4, color='orange')
 #5 
 x5 = np.linspace(-9, -6, 200)
-y5 = -(x5 + 7)**2 + 5
+y5 = -(x5 + 7)**2 + 5 
 plt.plot(x5, y5, color='violet') 
 #6
 x6 = np.linspace(6, 9, 200)
