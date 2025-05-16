@@ -4,6 +4,7 @@ import funktsioonid as f
 
 # Kontaktide laadimine mällu
 kontaktid = f.loe_kontaktid_failist()
+
 def kuva_kontaktid():
     tekstikast.delete("1.0", "end")
     for kontakt in kontaktid:
@@ -53,8 +54,14 @@ def kustuta_kontakt_gui():
 
 def sorteeri_gui():
     kontaktid_sorted = f.sorteeri_kontaktid(kontaktid, "nimi")
-    tekstikast.delete("1.0", "end")
+    tekstikast.delete("1.0", "end") 
     for kontakt in kontaktid_sorted:
+        tekstikast.insert("end", f"{kontakt['nimi']} | {kontakt['telefon']} | {kontakt['email']}\n")
+
+def sorteeri_reverse_gui():  
+    kontaktid_sorted_reverse = sorted(kontaktid, key=lambda x: x['nimi'], reverse=True)
+    tekstikast.delete("1.0", "end")
+    for kontakt in kontaktid_sorted_reverse:
         tekstikast.insert("end", f"{kontakt['nimi']} | {kontakt['telefon']} | {kontakt['email']}\n")
 
 def muuda_kontakt_gui():
@@ -74,12 +81,19 @@ def muuda_kontakt_gui():
     else:
         messagebox.showwarning("Puuduvad andmed", "Palun täida kõik väljad.")
 
+# Funktsioon Tühjenda kõik väljad
+def clear_all_fields():
+    nimi_entry.delete(0, 'end')
+    telefon_entry.delete(0, 'end')
+    email_entry.delete(0, 'end')
+    tekstikast.delete("1.0", "end")
 
 aken = tk.Tk()
 aken.title("Telefoniraamat") 
 aken.configure(bg="yellowgreen")
+
 # Sisestusväljad
-otsingu_viide = tk.StringVar()#IntVar() #Muudame StringVar-iks, et saaksime salvestada algse nime
+otsingu_viide = tk.StringVar() #Muudame StringVar-iks, et saaksime salvestada algse nime
 otsingu_viide.set("")
 tk.Label(aken, text="Nimi:",bg="green",font="Arial",).pack()
 nimi_entry = tk.Entry(aken)
@@ -90,21 +104,22 @@ telefon_entry = tk.Entry(aken)
 telefon_entry.pack()
 
 tk.Label(aken, text="Email:",bg="green",font="Arial",).pack()
-email_entry = tk.Entry(aken) 
+email_entry = tk.Entry(aken)  
 email_entry.pack()
 
 nuppude_rida = tk.Frame(aken)
 nuppude_rida.pack(pady=5)
 
-tk.Button(nuppude_rida, text="Lisa kontakt", command=lisa_kontakt,bg="yellowgreen",font=("Algerian",12)).pack(side="left",pady=5)
-tk.Button(nuppude_rida, text="Kuva kontaktid", command=kuva_kontaktid,bg="yellow",font=("Arial",12)).pack(side="left")
-tk.Button(nuppude_rida, text="Otsi kontakti", command=otsi_kontakti_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
-tk.Button(nuppude_rida, text="Kustuta kontakt", command=kustuta_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
-tk.Button(nuppude_rida, text="Sorteeri (nime järgi)", command=sorteeri_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
-tk.Button(nuppude_rida, text="Muuda kontakt", command=muuda_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Lisa kontakt",command=lisa_kontakt,bg="yellowgreen",font=("Algerian",12)).pack(side="left",pady=5)
+tk.Button(nuppude_rida, text="Kuva kontaktid",command=kuva_kontaktid,bg="yellow",font=("Arial",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Otsi kontakti",command=otsi_kontakti_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Kustuta kontakt",command=kustuta_kontakt_gui,bg="yellow",font=("Arial",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Sorteeri (nime järgi)",command=sorteeri_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Sorteeri vastupidises järjekorras",command=sorteeri_reverse_gui, bg="yellow", font=("Arial", 12)).pack(side="left")
+tk.Button(nuppude_rida, text="Muuda kontakt",command=muuda_kontakt_gui,bg="yellowgreen",font=("Algerian",12)).pack(side="left")
+tk.Button(nuppude_rida, text="Clear All",command=clear_all_fields, bg="yellow", font=("Arial", 12)).pack(side="left",pady=12)
 
- 
 tekstikast = tk.Text(aken, height=10, width=50)
 tekstikast.pack(pady=10)
 
-aken.mainloop() 
+aken.mainloop()
