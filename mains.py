@@ -49,7 +49,7 @@ def kustuta_kontakt_gui():
         f.salvesta_kontaktid_faili(kontaktid)
         messagebox.showinfo("Kustutatud", f"'{nimi}' kustutati.")
         kuva_kontaktid()
-    else:
+    else: 
         messagebox.showwarning("Ei leitud", "Kontakti ei leitud.")
 
 def sorteeri_gui():
