@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e860e6f4-50a0-4565-aa84-b9810e0b2a18</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mains.py</StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -32,6 +32,7 @@
     <Compile Include="8.1.py" />
     <Compile Include="kontaktid.json" />
     <Compile Include="funktsioonid.py" />
+    <Compile Include="module1.py" />
     <Compile Include="Sõnastik.py" />
     <Compile Include="main.py" />
     <Compile Include="Palgad.py" />
