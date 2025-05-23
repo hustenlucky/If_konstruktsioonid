@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e860e6f4-50a0-4565-aa84-b9810e0b2a18</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module1.py</StartupFile>
+    <StartupFile>majake 2.3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -33,6 +33,9 @@
     <Compile Include="kontaktid.json" />
     <Compile Include="funktsioonid.py" />
     <Compile Include="module1.py" />
+    <Compile Include="majake 2.3.py" />
+    <Compile Include="ulesane2.2.mäng.py" />
+    <Compile Include="ülesanne2.1.You.win.py" />
     <Compile Include="Sõnastik.py" />
     <Compile Include="main.py" />
     <Compile Include="Palgad.py" />
