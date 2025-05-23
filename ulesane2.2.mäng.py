@@ -20,7 +20,7 @@ for i in range(1, 12):
     pygame.draw.rect(pind, varv, [x, y, 20, 20])
 
 pygame.display.flip()
-while True:
+while True: 
     event = pygame.event.poll()
     if event.type == pygame.QUIT:
         break
