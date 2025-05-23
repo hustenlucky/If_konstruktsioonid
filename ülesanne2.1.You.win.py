@@ -24,4 +24,4 @@ while not gameover:
     for i in pygame.event.get():
         if i.type == pygame.QUIT:
             sys.exit()
-pygame.quit() # Pygame välja lülitamine
+pygame.quit() # Pygame välja lülitamine 
