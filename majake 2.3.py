@@ -44,7 +44,7 @@ pygame.draw.rect(pind, grey, [window_x, window_y, window_width, window_height])
 
 window_width = 10
 window_height = 5
-window_x = door_x + door_width + -20
+window_x = door_x + door_width + -20 
 window_y = door_y + (door_height // 2)  
 pygame.draw.rect(pind, grey, [window_x, window_y, window_width, window_height])
 
